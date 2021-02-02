@@ -1,0 +1,234 @@
+
+\documentclass[margin, 10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\large\bf Yizheng Jiao} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+\moveleft.5\hoffset\centerline{704 Martin Luther King Jr. Blvd Apt D8, Chapel Hill, N.C. 27514}
+\moveleft.5\hoffset\centerline{\textbf{Phone:} +1 (919) 914-1794    \textbf{Email:} yizheng@cs.unc.edu}
+\moveleft.5\hoffset\centerline{\textbf{Github:} jyizheng}
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{RESEARCH INTERESTS}  
+My research interests focus on the design and implementation of efficient and secure data management system.
+I am doing research on write-optimized index data structures for high-speed storage system.
+In my research projects, I am developing a general-purpose in-kernel file system on Linux which has
+compelling performance on micro-write intensive workloads.
+I am also exploring the potentials of write-optimzed data strutures in designing
+secure persistent key-value stores with the aid of SGX/TrustZone to protect user's data
+against malicious Operating System.
+
+%My research interests focus on the design and implementation of efficient data management system.
+%I am researching on write-optimized index data structures for high-speed storage system.
+%In my research projects, I am focusing on developing in-kernel file system on Linux and
+%improving existing database system by designing performant data structures.
+%
+%I am also very interested in system design for machine learning system.
+%I gained much experience on computer vision and machine learning techiniques
+%during the study of my master program. The thesis topic of my master and bachelor degree
+%were face recognition under unconstrained environments and contened-based video retrieval.
+
+%----------------------------------------------------------------------------------------
+%	Education SECTION
+%----------------------------------------------------------------------------------------
+\section{EDUCATION EXPERIENCE} 
+
+{\sl Ph.D in Computer Science} \hfill Aug. 2016 - Present \\
+University of North Carolina at Chapel Hill \\
+Advisor: Donald Porter
+Expected graduation date: Aug. 2021
+
+{\sl M.S. in Computer Science} \hfill Jan. 2014 - Aug. 2016 \\
+Stony Brook University \\
+Advisor: Donald Porter
+
+{\sl M.S. in Electrical and Computer Engineering} \hfill Sep. 2009 - March. 2012 \\
+Huazhong University of Science \& Technology \\
+Advisor: Feng Bin, Wenyu Liu
+
+{\sl B.S. in Electrical and Computer Engineering} \hfill Sep. 2005 - Jun. 2009 \\
+Chongqing University
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{PROFESSIONAL EXPERIENCE}
+
+{\sl Research Intern} \hfill May 2018 - Aug. 2018 \\
+Advanced Technology Group, NetApp Inc, Durham, N.C. \\
+Mentor: Michael Condict, Xiongzi Ge
+\begin{itemize}
+\item Optimization of $BetrFS$ for SSD device;
+\item Integration of in-kernel $B^{\epsilon}$-tree key-value store with Linux page cache to reduce overhead of data transport;
+\item Extended BetrFS to support large block size to reduce meta-data overhead;
+\item Sequential write performance is increased by 2 times.
+\end{itemize} 
+
+{\sl Software Engineer Intern} \hfill May 2017 - Aug. 2017 \\
+vSan Team, VMWare Inc, Palo Alto, C.A. \\
+Mentor: Wenguang Wang, Ding Li
+\begin{itemize}
+\item Optimization of Copy-on-Write $B-tree$ with write-optimized techniques;
+\item Analysis of snapshot service performance for Virtual Distributed File System (VDFS);
+\item Implementation of physical block cache for VDFS;
+\item Read performance is improved by $50\%$.
+\end{itemize}
+
+{\sl Software Engineer} \hfill May 2013 - Aug. 2013 \\
+Leadership Computing Facility Group, Oak Ridge National Lab, Knoxville, T.N. \\
+Mentor: Sarp Oral
+\begin{itemize}
+\item Implementation of parallel and scalable programs to move and archive large volumes of data on supercomputers;
+\item Analysis on performance of implemented utilities on Titan supercomputer with hundreds of MPI nodes. 
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	Research Project
+%----------------------------------------------------------------------------------------
+
+\section{RESEARCH PROJECTS}
+
+{\sl \textbf{BetrFS Project}} \hfill Jan. 2014 - Present \\
+Details could be found at \textbf{http://www.betrfs.org}
+\begin{itemize}
+\item Profing and analyzing BetrFS performance on SSD device;
+\item Optimizing BetrFS's metadata performance with varied block size;
+\item Integrating in-kernel $B^{\epsilon}$-tree key-value store with Linux page cache;
+\item Implementing Copy-on-Write page cache to support file system transaction.
+\end{itemize} 
+
+{\sl \textbf{Exploring Contiguity in Memory System}} \hfill May 2014 - May 2015  \\
+\begin{itemize}
+\item Studying physical page allocator of popular operating systems, such as Linux, Windows, OpenBSD and Solaris OS;
+\item Studying disk block allocator of file systems , such as Ext4, ZFS;
+\item Evaluating performance impact of Linux Transparent Hugepages for application with big memory footprint, such as graph proccessing, k-mer counting for Genome sequences.
+\end{itemize} 
+
+
+{\sl \textbf{Efficient Data Management for MapReduce Programs}} \hfill May 2013 - Dec 2013 \\
+\begin{itemize}
+\item Enabling memory sharing between map/reduce tasks on the same compute node;
+\item Accelerating merge phase of MapReduce programs by decoupling values from the K-V pairs during sorting;
+\item Testing performance of MapReduce programs on Amazon EC2 cluster.
+\end{itemize} 
+
+{\sl \textbf{Hybrid Memory System for GPU}} \hfill Aug. 2012 - May 2013 \\
+\begin{itemize}
+\item Hybridizing phrase-change memory and DRAM for GPU global memory;
+\item Implementing compiler-directed initial data placement for CUDA programs;
+\item Integrating GPGPU-Sim with DRAMSim2 to simulate GPU global memory system;
+\item Implementing simulator code to perform hardware-based page migration between PCM and DRAM.
+\end{itemize} 
+
+\section{PUBLICATIONS}
+$[\bf{Arxiv}]$: \textbf{Yizheng Jiao}. \textbf{\textit{Exploring Physical Contiguity in Memory System.}}
+
+%$[\bf{Submitted\ to\ ACSAC'2020}]$: Wenhui Zhang, \textbf{Yizheng Jiao}, Peng Liu, and Trent Jaeger. \textbf{\textit{Analyzing the Overhead of Filesystem Protection Using Linux Security Modules.}}
+
+$[\bf{Submitted\ to\ FAST'2021}]$:\textbf{Yizheng Jiao}, Simon Bertron, Nirjhar Mukherjee, Rory Bennett, Michael A. Bender, Alex Conway, Martin Farach-Colton
+William Jannen, Rob Johnson, Donald E. Porter, and Jun Yuan. \textbf{\textit{FestiFS: A General-Purpose File System for Commodity SSDs and HDDs.}}
+
+$[\bf{FAST'20}]$:Yang Zhan, Alex Conway, \textbf{Yizheng Jiao}, Nirjhar Mukherjee, Ian Groombridge, Michael A. Bender, Martin Farach-Colton
+William Jannen, Rob Johnson, Donald E. Porter, and Jun Yuan. \textbf{\textit{How to Copy Files.}}
+
+$[\bf{ICPR'19}]$:Wenhui Zhang, \textbf{Yizheng Jiao}, Dazhong Wu, Srivatsa Srinivasa, Asmit De, Swaroop Ghosh, Peng Liu.
+\textbf{\textit{ArmorPLC: Cyber Security Threats Detection through Ladder Logic Validation for PLCs.}}
+
+$[\bf{HotStorage'19}]$:
+Alex Conway, Eric Knorr, \textbf{Yizheng Jiao}, Michael A. Bender, William Jannen, Rob Johnson, Donald Porter, Martin Farach-Colton.
+\textbf{\textit{Filesystem Aging: It’s more Usage than Fullness.}}
+
+
+$[\bf{SPAA'19}]$:Michael A. Bender, Alexander Conway, Martin Farach-Colton, William Jannen,
+\textbf{Yizheng Jiao}, Rob Johnson, Eric Knorr, Sara McAllister, Nirjhar
+Mukherjee, Prashant Pandey, Donald E. Porter, Jun Yuan and Yang Zhan. \textbf{\textit{Small Refinements to the DAM Can Have Big Consequences for
+Data-Structure Design}}.
+
+$[\bf{FAST'18}]$:Yang Zhan, Alex Conway, \textbf{Yizheng Jiao}, Eric Knorr, Michael A. Bender, Martin Farach-Colton, William Jannen, Rob Johnson, Donald E. Porter, Jun Yuan.
+\textbf{\textit{The Full Path of Full-Path Indexing}}. 
+Oakland, USA. Feb, 2018.
+
+$[\bf{FAST'17}]$:Alex Conway, Ainesh Bakshi, \textbf{Yizheng Jiao}, Yang Zhan, Michael A. Bender, William Jannen, Bradley C. Kuszmaul, Donald Porter, Jun Yuan, Martin Farach-Colton.
+\textbf{\textit{File System Fated for Senescence? Nonsense, Says Science!}}. 
+Santa Clara, USA. Feb, 2017.
+
+$[\bf{SOSP'15}]$:Chia-Che Tsai, Yang Zhan, Jayashree Reddy, \textbf{Yizheng Jiao}, Tao Zhang, Donald E. Porter. \textbf{\textit{How to Get More Value From Your File System Directory Cache}}. Monterey, USA. Jan, 2015.
+
+$[\bf{FAST'15}]$:William Jannen, Jun Yuan, Yang Zhan, Amogh Akshintala, John Esmet, \textbf{Yizheng Jiao}, Ankur Mittal, Prashant Pandey, and Phaneendra Reddy, Leif Walsh, Michael Bender, Martin FarachColton, Rob Johnson, Bradley C. Kuszmaul, Donald E. Porter. \textbf{\textit{BetrFS: A Right-Optimized Write Optimized File System}}. Santa Clara, USA. Jan, 2015.
+
+$[\bf{SC'13}]$:Xiaobing Li, Yandong Wang, \textbf{Yizheng Jiao}, Cong Xu, Weikuan Yu. \textbf{\textit{Coomr: Cross-Task Coordination for Efficient Data Management in MapReduce Programs}}. Denver, USA. November, 2013.
+
+$[\bf{PACT'13}]$:Bin Wang, Bo Wu, Dong Li, Xipeng Shen, Weikuan Yu, \textbf{Yizheng Jiao}, Jeffrey S. Veter. \textbf{\textit{Exploring Hybrid Memory for GPU Energy Efficiency through Software-Hardware Co-Design}}. Edinburgh, Scotland. September, 2013.
+
+$[\bf{MASCOT'13}]$:Bin Wang, \textbf{Yizheng Jiao}, Xipeng Shen, Dong Li, Weikuan Yu.
+\textbf{\textit{A Versatile Performance and Energy Simulation Tool for GPU global memory}}.
+San Francisco, USA. August, 2013.
+
+$[\bf{BAWD'13}]$:Yandong Wang, \textbf{Yizheng Jiao}, Cong Xu, Xiaobing Li, Teng Wang Xinyu Yue, Cristi Cira, Bin Wang, Zhuo Liu, Bliss Bailey, Weikuan Yu. 
+\textbf{\textit{Assessing the Performance Impact of HighSpeed Interconnects on MapReduce}}.
+2013.
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	Technology SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{TECHNOLOGY \\ SKILLS} 
+
+{\sl Programming Languages:} C, Python, Java \\
+{\sl Operating System and Services:} Linux, AWS Cloud Services, Docker, Jenkins. \\
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNITY SERVICES
+%----------------------------------------------------------------------------------------
+
+%\begin{itemize}
+%\item Full scholarship master student from 2009 to 2012;
+%\item University-Wide Excellent Graduate of Chongqing University in 2009;
+%\item The National Aspiration Scholarship for two time in 2007 and 2009;
+%\item Huawei Scholarship in 2006.
+%\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	HONORS and AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{HONORS AWARDS} 
+\begin{itemize}
+\item Merit Student Scholarship of 2009, 2010, 2011;
+\item University-Wide Thesis Award of Chongqing University in 2009;
+\item National Aspiration Scholarship for two time in 2007 and 2009;
+\item Huawei Scholarship in 2006.
+\end{itemize}
+
+
+\end{resume}
+\end{document}
